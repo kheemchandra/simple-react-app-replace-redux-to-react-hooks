@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
-import App from './App';  
-import StoreContextProvider from './context/context-store';
+import App from './App';   
+import ConfigureStore from './hook-store/products-store';
 
-ReactDOM.render(
-  <StoreContextProvider> 
+ConfigureStore();
+
+ReactDOM.render( 
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-    </StoreContextProvider>,
+    </BrowserRouter>,
   document.getElementById('root')
 );

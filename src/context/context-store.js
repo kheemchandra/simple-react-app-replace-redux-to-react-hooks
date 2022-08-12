@@ -5,7 +5,7 @@ export const StoreContext = React.createContext({
   toggleFav: (productId) => {},
 });
 
-export default (props) => {
+const StoreContextProvider = (props) => {
   const [productsList, setProductsList] = useState([
     {
       id: "p1",
@@ -57,3 +57,5 @@ export default (props) => {
     </StoreContext.Provider>
   );
 };
+
+export default StoreContextProvider;
