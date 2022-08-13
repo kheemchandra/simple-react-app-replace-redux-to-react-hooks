@@ -1,0 +1,13 @@
+.numbers{
+  text-align:  center;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 80vw;
+  max-width: 600px;
+}
+
+.numbers-controls{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -4,7 +4,7 @@ import Card from '../UI/Card';
 import { useStore } from '../../hook-store/use-store';
 import './ProductItem.css';  
 
-const ProductItem = React.memo(props => {console.log('RENDERING')
+const ProductItem = React.memo(props => {  
 
   const dispatch = useStore(false)[1];
 
